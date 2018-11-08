@@ -1,0 +1,16 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "A full-stack application that allows users to CRUD a collection of hamburgers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Geoff Peel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}

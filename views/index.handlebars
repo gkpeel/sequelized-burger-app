@@ -1,0 +1,47 @@
+
+<div class="burger__background jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="intro__container col-sm-12 col-xl-10 mx-auto">
+                <div class="intro-text__container mb-4 text-center">
+                    <h1 class="intro-text__title mb-2">Welcome to Burger-town</h1>
+                    <h3 class="font-italic">Population you and Ronnie McD</h3>
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="text" id="burger__value" class="form-control" placeholder="Enter the name of a burger you want to eat" aria-label="Enter a burger name" aria-describedby="data-submission">
+                    <div class="input-group-append">
+                        <button id="burger__submit" class="btn btn-primary" type="button">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-5 text-center">
+            <h2 class="mb-3">So many burgers, so little time</h2>
+            <h5>Let's start ordering 'em up and knocking them down.</h5>
+        </div>
+    </div>
+    <div class="burgers__container">
+        <div class="row">
+            <div class="burgers__uneaten col-sm-6">
+                <h3 class="mb-3 text-center">Burgers To Eat:</h3>
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        {{> burgers/burger-single}}
+                    {{/unless}}
+                {{/each}}
+            </div>
+            <div class="burgers__eaten col-sm-6 d-flex flex-column">
+                <h3 class="mb-3 text-center">Burgers Eaten:</h3>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        {{> burgers/burger-single}}
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

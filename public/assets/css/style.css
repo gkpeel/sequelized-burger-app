@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR|Roboto');
+
+body {
+    background-color: #f8e7ac;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+p, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary, .burger__devour-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.burger__background {
+    background: url('https://images.pexels.com/photos/1053769/pexels-photo-1053769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center no-repeat;
+    background-size: cover;
+}
+
+.intro__container {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 2rem 1rem; 
+    color: #fefefe;
+}
+
+.intro__container h3 {
+    opacity: .85;
+}
+
+.intro__container .input-group {
+    max-width: 800px;
+    margin: auto;
+}
+
+#burger__value:focus {
+    border-color: #f3d56e;
+    box-shadow: 0 0 0 0.2rem rgba(243, 213, 110, 0.25);
+
+}
+
+.btn-primary {
+    background-color: #EEC330;
+    border-color: #EEC330;
+    color: #B23A3E;
+}
+
+.btn-primary:hover {
+    background-color: #f3d56e;
+    border-color: #f3d56e;
+    color: #B23A3E;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(243, 213, 110, 0.25);
+}
+
+.burger__single-container {
+    flex-direction: column;
+}
+
+.burgers__eaten .burger__single-name {
+    border-radius: 0.25rem;
+}
+
+.burger__single-name {
+    flex: 1 0 auto;
+    background-color: #B23A3E;
+    color: #fefefe;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.burger__devour-btn {
+    background-color: #B23A3E;
+    border-color: #B23A3E;
+    color: #fefefe;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.burger__devour-btn:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (min-width: 992px) {
+    .burger__single-name {
+        font-size: 18px;
+    }
+    .burger__single-container {
+        flex-direction: row;
+    }
+    .burger__single-name {
+        border-bottom-left-radius: 0.25rem;
+        border-top-right-radius: 0;
+    }
+    .burger__devour-btn {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.25rem;
+        border-left: 1px #c97577 solid;
+    }
+}

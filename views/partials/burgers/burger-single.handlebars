@@ -1,0 +1,19 @@
+{{#unless devoured}}
+    <div class="burger__single-container d-flex mb-3">
+        <div class="burger__single-name mr-xl-auto py-2 py-lg-3 pl-4 text-center text-lg-left" >
+            {{id}}. {{burger_name}}
+        </div>
+        <button class="burger__devour-btn px-4 py-2 py-lg-0 " data-id="{{id}}">
+            Devour
+        </button>
+    </div>
+{{/unless}}
+
+{{#if devoured}}
+    <div class="burger__single-container mb-3 ">
+        <div class="burger__single-name mr-auto py-3 px-2 text-center text-lg-left" >
+            {{id}}. {{burger_name}}
+        </div>
+    </div>
+{{/if}}
+
